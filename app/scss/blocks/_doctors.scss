@@ -1,0 +1,15 @@
+.doctors {
+    padding-top: 80px;
+
+    @media (max-width: 1024px) {
+        padding-top: 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 50px;
+    }
+
+    @media (max-width: 670px) {
+        display: none;
+    }
+}

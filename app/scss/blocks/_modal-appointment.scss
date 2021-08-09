@@ -1,0 +1,25 @@
+.modal-appointment {
+    &__inner {
+        margin-bottom: 93px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 73px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
+
+        @media (max-width: 768px) {
+            align-self: center;
+        }
+
+        + .form-group {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+.reviews {
+    &__container {
+        max-width: 936px;
+
+        @media (max-width: 1280px) {
+            max-width: 784px;
+        }
+
+        @media (max-width: 1024px) {
+            max-width: 704px;
+        }
+    }
+}

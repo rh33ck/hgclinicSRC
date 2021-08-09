@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include("partials/_head.html", {
+        "title": "Контакты | High Guard Clinic"
+    })
+    <body class="body">
+        <div class="page">
+            @@include("partials/_page-header.html", {})
+
+            <main>
+                @@include("partials/_hero.html", {})
+
+                <div class="page__inner">
+                    <div class="page__container container-page">
+                        <div class="page__main">
+                            @@include("partials/_breadcrumbs.html", {})
+
+                            <div class="content">
+                                <div class="content-header content__header">
+                                    <h1 class="content-header__title">
+                                        Наши контакты
+                                    </h1>
+                                    <div class="content-header__description">
+                                        <p class="content-header__paragraph content-header__paragraph--bold">
+                                            Комфорт и спокойствие пациента — это часть качественного лечения! Предупредите
+                                            администратора, что вы едете к нам на машине и мы предложим бесплатную подземную парковку
+                                            при нашей клинике.
+                                        </p>
+                                        <p class="content-header__paragraph">
+                                            Работаем без выходных с 09:00 до 21:00
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <section class="content-section content__section">
+                                    <div class="content-section__text">
+                                        <div class="contact-block contact-block--left-aligned">
+                                            <div class="contact-block__item">
+                                                <div class="contact-block__label">
+                                                    Москва, Рыбников переулок, д. 1
+                                                </div>
+                                                <div class="contact-block__phone contact-block__phone--black">
+                                                    +7 (499) 999-15-99
+                                                </div>
+                                            </div>
+                                            <div class="contact-block__item">
+                                                <div class="contact-block__label">
+                                                    Viber, Telegram, Whatsapp
+                                                </div>
+                                                <div class="contact-block__phone contact-block__phone--black">
+                                                    +7 (499) 999-15-99
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p class="content-section__paragraph">
+                                            Эл. почта: <a href="mailto:info@hgclinic.ru">info@hgclinic.ru</a>
+                                        </p>
+                                        <p class="content-section__paragraph">
+                                            Стоматологическая клиника находится в центре Москвы, прямо у метро. 
+                                            Ближайшие станции в 3-5 минутах ходьбы
+                                        </p>
+                                        <img src="images/stations.png" alt="">
+                                        <img src="images/parking.png" alt="">
+                                    </div>
+                                </section>
+
+                                @@include("partials/_faq.html", {})
+                            </div>
+                        </div>
+                        
+                        @@include("partials/_sidebar.html", {})
+                    </div>
+                </div>
+
+                @@include("partials/_appointment.html", {})
+
+                @@include("partials/_doctors.html", {})
+
+                @@include("partials/_useful.html", {})
+
+                @@include("partials/_map.html", {})
+
+                @@include("partials/_contact.html", {
+                    "element-class": ""
+                })
+            </main>
+
+            @@include("partials/_page-footer.html", {})
+
+            @@include("partials/_modals.html", {})
+        </div>
+
+        @@include("partials/_scripts.html", {})
+    </body>
+</html>

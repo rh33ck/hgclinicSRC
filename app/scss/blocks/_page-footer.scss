@@ -1,0 +1,188 @@
+.page-footer {
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.85);
+    background: $color-black url("../images/reception.jpg") center center no-repeat;
+    background-size: cover;
+    mix-blend-mode: overlay;
+
+    &__body {
+        padding-top: 80px;
+        padding-bottom: 70px;
+
+        @media (max-width: 1280px) {
+            padding-top: 70px;
+            padding-bottom: 80px;
+        }
+
+        @media (max-width: 1024px) {
+            padding-top: 37px;
+            padding-bottom: 60px;
+        }
+
+        @media (max-width: 576px) {
+            padding-top: 20px;
+            padding-bottom: 48px;
+        }
+    }
+
+    &__container {
+        @media (max-width: 1280px) {
+            max-width: 1114px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 28px;
+
+        @media (max-width: 1280px) {
+            margin-bottom: 17px;
+        }
+
+        @media (max-width: 1024px) {
+            margin-bottom: 37px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__start {
+        flex-basis: 503px;
+
+        @media (max-width: 1024px) {
+            flex-basis: 345px;
+        }
+
+        @media (max-width: 670px) {
+            flex-basis: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__logo {
+        margin-bottom: 30px;
+
+        @media (max-width: 1024px) {
+            margin-bottom: 17px;
+        }
+
+        img {
+            @media (max-width: 1024px) {
+                width: 270px;
+                height: 60px;
+            }
+
+            @media (max-width: 576px) {
+                width: 180px;
+                height: 40px;
+            }
+        }
+    }
+
+    &__description {
+        margin-bottom: 20px;
+    }
+
+    &__end {
+        flex-basis: 298px;
+        margin-right: 110px;
+        margin-left: auto;
+
+        @media (max-width: 1280px) {
+            margin-right: 0;
+        }
+
+        @media (max-width: 1024px) {
+            flex-basis: 254px;
+        }
+
+        @media (max-width: 670px) {
+            flex-basis: 100%;
+            margin-left: 0;
+        }
+    }
+
+    &__contacts {
+        margin-top: 13px;
+        margin-bottom: 43px;
+
+        @media (max-width: 1024px) {
+            margin-top: 11px;
+            margin-bottom: 35px;
+        }
+
+        @media (max-width: 670px) {
+            margin-top: 0;
+        }
+    }
+
+    &__menu {
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 15px;
+        padding: 11px 0 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+        font-size: 12px;
+        line-height: 12/12 * 100%;
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+
+        @media (max-width: 670px) {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        @media (max-width: 479px) {
+            font-size: 8px;
+        }
+    }
+
+    &__copyright {
+        max-width: 310px;
+
+        @media (max-width: 670px) {
+            max-width: 265px;
+            margin-bottom: 9px;
+
+            text-align: center;
+        }
+
+        @media (max-width: 479px) {
+            max-width: 210px;
+        }
+    }
+
+    &__absolut-marketing {
+        max-width: 370px;
+
+        text-align: right;
+
+        @media (max-width: 768px) {
+            max-width: 315px;
+        }
+
+        @media (max-width: 670px) {
+            text-align: center;
+        }
+
+        @media (max-width: 479px) {
+            max-width: 270px;
+        }
+
+        a {
+            color: $color-gray;;
+        }
+    }
+}

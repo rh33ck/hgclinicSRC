@@ -1,0 +1,18 @@
+.content-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px -8px (50px-8px);
+
+    &__image {
+        width: calc(50% - 16px);
+        margin: 8px;
+
+        border-radius: 20px;
+        overflow: hidden;
+
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}

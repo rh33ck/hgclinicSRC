@@ -1,0 +1,87 @@
+.useful {
+    padding-bottom: 107px;
+
+    @media (max-width: 1280px) {
+        padding-bottom: 80px;
+    }
+
+    @media (max-width: 1024px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 820px) {
+        padding-bottom: 48px;
+    }
+
+    @media (max-width: 576px) {
+        padding-bottom: 48px;
+    }
+
+    &__cards {
+        display: flex;
+        margin: 0 -8px;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    &__card {
+        margin: 0 8px;
+
+        &:not(:last-of-type) {
+            @media (max-width: 576px) {
+                margin: 0 0 16px;
+            }
+        }
+    }
+
+    &__btn {
+        display: block;
+        width: 310px;
+        margin: 48px auto 0;
+        padding: 15px 25px;
+        border: 1px solid $color-light-green;
+
+        border-radius: 25px;
+        color: $color-black;
+        background-color: $color-white;
+        transition: 0.2s color linear,
+                    0.2s background-color linear;
+
+        font-size: 18px;
+        line-height: 18/18 * 100%;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media (max-width: 1280px) {
+            width: 260px;
+            padding-top: 13px;
+            padding-bottom: 13px;
+
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 251px;
+            padding-top: 11px;
+            padding-bottom: 11px;
+
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            width: 220px;
+            margin-top: 24px;
+            padding-bottom: 12px;
+
+            font-size: 11px;
+        }
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-light-green;
+        }
+    }
+}

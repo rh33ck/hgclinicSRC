@@ -1,0 +1,122 @@
+.appointment-form {
+    &__inner {
+        margin-bottom: 30px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+        }
+
+        &--in-modal {
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &__group {
+        margin-right: 16px;
+
+        @media (max-width: 576px) {
+            margin-right: 0;
+            margin-bottom: 14px;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+        }
+
+        &--in-modal {
+            @media (max-width: 768px) {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    &__btn {
+        align-self: flex-end;
+        margin-left: 38px;
+
+        @media (max-width: 1280px) {
+            min-width: 228px;
+            margin-left: 16px;
+        }
+
+        @media (max-width: 1024px) {
+            min-width: 224px;
+        }
+
+        @media (max-width: 768px) {
+            min-width: 164px;
+        }
+
+        @media (max-width: 576px) {
+            align-self: auto;
+            margin-top: 24px;
+            margin-left: 0;
+        }
+    }
+
+    &__btn-send {
+        margin-top: 40px;
+
+        @media (max-width: 768px) {
+            margin-top: 30px;
+        }
+    }
+
+    &__agreement {
+        max-width: 685px;
+        margin: 0 auto;
+
+        font-size: 14px;
+        line-height: 14/14 * 100%;
+        text-align: center;
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            max-width: 463px;
+
+            font-size: 10px;
+        }
+
+        &--black {
+            color: $color-black;
+        }
+    }
+
+    &__agreement-desktop {
+        @media (max-width: 576px) {
+            display: none;
+        }
+    }
+
+    &__agreement-mobile {
+        display: none;
+        max-width: 300px;
+        margin: 0 auto;
+
+        @media (max-width: 576px) {
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+        }
+    }
+}

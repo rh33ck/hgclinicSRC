@@ -1,0 +1,110 @@
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+
+        @media (max-width: 576px) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        &--centered {
+            justify-content: center;
+        }
+    }
+
+    &__item {
+        &:first-of-type {
+            margin-right: 12px;
+
+            @media (max-width: 576px) {
+                display: none;
+            }
+        }
+
+        &--in-footer {
+            &:not(:last-of-type) {
+                margin-right: 18px;
+
+                @media (max-width: 1024px) {
+                    margin-right: 14px;
+                }
+            }
+        }
+    }
+
+    &__link {
+        padding: 5px 10px;
+
+        border-radius: 20px;
+        color: rgba(0, 0, 0, 0.9);
+        transition: 0.2s color linear;
+
+        font-size: 18px;
+
+        &:hover {
+            color: $color-light-green;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 576px) {
+            font-size: 16px;
+        }
+
+        &--in-footer {
+            padding: 0;
+
+            color: rgba(255, 255, 255, 0.5);
+
+            @media (max-width: 1280px) {
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            &:hover {
+                color: rgba(255, 255, 255, 0.9);
+            }
+        }
+
+        &--in-burger {
+            color: rgba(255, 255, 255, 0.8);
+
+            font-weight: bold;
+
+            @media (max-width: 1024px) {
+                font-weight: 400;
+            }
+
+            @media (max-width: 576px) {
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                color: rgba(255, 255, 255, 0.5);
+            }
+        }
+    }
+
+    &__arrow {
+        margin-right: 13px;
+
+        @media (min-width: 576px) {
+            display: none;   
+        }
+    }
+
+    &__label {        
+        @media (max-width: 576px) {
+            display: inline-block;
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px solid $color-gray;
+        }
+    }
+}

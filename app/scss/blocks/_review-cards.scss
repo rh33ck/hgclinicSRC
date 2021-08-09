@@ -1,0 +1,44 @@
+.review-cards {
+    &__inner {
+
+    }
+
+    &__filter {
+        margin-bottom: 20px;
+    }
+
+    &__card {
+        margin: 0 auto;
+
+        &:not(:last-of-type) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__links {
+        margin-top: 24px;
+
+        text-align: center;
+    }
+
+    &__all {
+        margin-right: 9px;
+    }
+
+    &__all,
+    &__add {
+        @media (max-width: 1024px) {
+            font-size: 16px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+    }
+
+    &__actions {
+        margin-top: 40px;
+
+        text-align: center;
+    }
+}

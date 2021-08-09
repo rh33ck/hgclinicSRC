@@ -1,0 +1,65 @@
+.tabs-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__btn {
+        min-width: 280px;
+        min-height: 50px;
+        padding: 0 30px;
+        border: 1px solid #01853E;
+
+        color: #01843e;
+        background-color: transparent;
+
+        font-size: 18px;
+        line-height: 18/18 * 100%;
+        text-transform: uppercase;
+
+        @media (max-width: 1024px) {
+            min-width: 224px;
+            min-height: 40px;
+            padding: 0 20px;
+
+            font-size: 15px;
+        }
+
+        @media (max-width: 768px) {
+            min-width: 168px;
+            min-height: 30px;
+            padding: 0 15px;
+
+            font-size: 12px;
+        }
+
+        @media (max-width: 576px) {
+            min-width: 144px;
+            min-height: 28px;
+            padding: 0 12px;
+
+            font-size: 10px;
+        }
+
+
+        &:first-of-type {
+            border-radius: 25px 0px 0px 25px;
+
+            @media (max-width: 576px) {
+                border-radius: 5px 0px 0px 5px;
+            }
+        }
+
+        &:last-of-type {
+            border-radius: 0 25px 25px 0;
+
+            @media (max-width: 576px) {
+                border-radius: 0 5px 5px 0;
+            }
+        }
+
+        &--active {
+            color: $color-white;
+            background: linear-gradient(180deg, $color-light-green 0%, #017637 100%);
+        }
+    }
+}

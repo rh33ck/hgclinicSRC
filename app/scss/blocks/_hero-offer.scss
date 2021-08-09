@@ -1,0 +1,114 @@
+.hero-offer {
+    // padding-left: 26px;
+    // border-left: 7px solid $color-dark-green;
+
+    &__title {
+        margin-bottom: 7px;
+
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 36/48 * 100%;
+
+        @media (max-width: 1280px) {
+            font-size: 42px;
+            line-height: 32/42 * 100%;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 32px;
+            line-height: 24/32 * 100%;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 18/24 * 100%;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 13px;
+
+        color: $color-dark-green;
+
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 20/20 * 100%;
+        text-transform: uppercase;
+
+        @media (max-width: 1280px) {
+            margin-bottom: 5px;
+
+            font-size: 18px;
+            line-height: 20/18 * 100%;
+        }
+
+        @media (max-width: 1024px) {
+            margin-bottom: 0;
+
+            font-size: 14px;
+            line-height: 14/14 * 100%;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+
+    &__price {
+        margin-bottom: 5px;
+
+        color: $color-dark-green;
+
+        font-size: 96px;
+        font-weight: 700;
+        line-height: 96/96 * 100%;
+        letter-spacing: -0.02em;
+
+        @media (max-width: 1280px) {
+            font-size: 80px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 60px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 40px;
+        }
+    }
+
+    &__currency {
+        font-size: 20px;
+        line-height: 20/20 * 100%;
+
+        @media (max-width: 1280px) {
+            font-size: 18px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+
+    &__days {
+        font-size: 16px;
+        line-height: 16/16 * 100%;
+        text-transform: uppercase;
+
+        @media (max-width: 1280px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 8px;
+        }
+    }
+}

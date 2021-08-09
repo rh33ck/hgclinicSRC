@@ -1,0 +1,51 @@
+<section class="page-section appointment">
+    <div class="appointment__container container">
+        <div class="heading heading--centered page-section__heading appointment__heading">
+            <h2 class="heading__inner heading__inner--default">
+                Записаться на прием
+            </h2>
+            <div class="heading__subhead heading__subhead--default">
+                Оставьте свой номер и наши специалисты свяжутся с Вами в ближайшее время
+            </div>
+        </div>
+        <div class="appointment-form">
+            <form class="appointment-form__inner" action="/">
+                <div class="appointment-form__row">
+                    <div class="form-group form-group--default appointment-form__group">
+                        <label class="form-group__label" for="appointmentName">
+                            Как к Вам обратиться?
+                        </label>
+                        <input id="appointmentName" class="field field--name form-group__field" type="text" placeholder="Введите имя" required>
+                    </div>
+                    <div class="form-group form-group--default appointment-form__group">
+                        <label class="form-group__label" for="appointmentPhone">
+                            Номер мобильного телефона
+                        </label>
+                        <input id="appointmentPhone" class="field field--phone form-group__field" type="tel" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    <button class="btn btn--default appointment-form__btn" type="submit">
+                        Записаться<span class="btn__word"> на прием</span>
+                        <span class="btn__circle">
+                            <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.98312 0L7.49315 0.487259L9.67352 2.65547H0V3.34457H9.67352L7.49315 5.51276L7.98312 6.00001L11 3L7.98312 0Z"/>
+                            </svg>
+                        </span>
+                    </button>
+                </div>
+            </form>
+
+            <div class="appointment-form__agreement">
+                <span class="appointment-form__agreement-desktop">
+                    Нажимая кнопку «Отправить заявку», я даю свое согласие на обработку моих персональных данных, в
+                    соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных данных», на условиях и для
+                    целей, определенных в Согласии на обработку персональных данных.
+                </span>
+                <span class="appointment-form__agreement-mobile">
+                    Нажимая на кнопку «Отправить заявку», Вы даете согласие на
+                    <a href="#">обработку персональных данных</a> и соглашаетесь с <a href="#">политикой
+                    конфиденциальности</a>
+                </span>
+            </div>
+        </div>
+    </div>
+</section>

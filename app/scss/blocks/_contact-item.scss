@@ -1,0 +1,89 @@
+.contact-item {
+    position: relative;
+    padding-left: 30px;
+
+    color: $color-black;
+    background-color: transparent;
+
+    font-size: 16px;
+    line-height: 19/16 * 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__span {
+        color: $color-light-green;
+    }
+
+    &--light {
+        color: rgba(255, 255, 255, 0.5);
+
+        .contact-item__span {
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    &--address {
+        &::before {
+            left: 2px;
+            width: 10px;
+            height: 16px;
+
+            background-image: url("../images/contact-item/geopoint.svg");
+        }
+    }
+
+    &--schedule {
+        &::before {
+            width: 14px;
+            height: 14px;
+
+            background-image: url("../images/contact-item/clock.svg");
+        }
+    }
+
+    &--phone {
+        &::before {
+            width: 14px;
+            height: 14px;
+
+            background-image: url("../images/phone.svg");
+        }
+    }
+
+    &--feedback {
+        &::before {
+            width: 19px;
+            height: 16px;
+
+            background-image: url("../images/contact-item/heart.svg");
+        }
+    }
+
+    &--appointment {
+        &::before {
+            width: 19px;
+            height: 19px;
+
+            background-image: url("../images/contact-item/calendar.svg");
+        }
+    }
+
+    &--email {
+        &::before {
+            width: 14px;
+            height: 11px;
+
+            background-image: url("../images/mail.svg");
+        }
+    }
+}

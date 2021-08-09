@@ -1,0 +1,33 @@
+.content {
+    &__header {
+        margin-bottom: 55px;
+    }
+
+    &__gallery {
+        // margin-bottom: 50px;
+    }
+
+    &__section {
+        margin-bottom: 80px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+    }
+
+    &__offers {
+        display: none;
+
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+
+    &__tabs {
+        margin-bottom: 80px;
+    }
+
+    &__pagination {
+        margin-bottom: 130px;
+    }
+}

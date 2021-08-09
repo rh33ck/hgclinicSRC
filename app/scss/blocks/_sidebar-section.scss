@@ -1,0 +1,12 @@
+.sidebar-section {
+    &__title {
+        margin-bottom: 24px;
+
+        color: $color-black;
+
+        font-family: "Proxima Nova";
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 18/18 * 100%;
+    }
+}

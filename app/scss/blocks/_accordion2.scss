@@ -1,0 +1,11 @@
+.accordion2 {
+    padding-left: 61px;
+
+    @media (max-width: 768px) {
+        padding-left: 30px;
+    }
+
+    &__item {
+
+    }
+}

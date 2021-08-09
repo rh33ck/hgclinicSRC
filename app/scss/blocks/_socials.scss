@@ -1,0 +1,47 @@
+.socials {
+    &__list {
+        display: inline-flex;
+        align-items: center;
+        vertical-align: middle;
+    }
+
+    &__item:not(:last-of-type) {
+        margin-right: 6px;
+    }
+
+    &__link {
+        // display: block;
+    }
+
+    &__icon {
+        display: block;
+        width: 20px;
+        height: 20px;
+
+        fill: $color-white;
+        fill-opacity: 0.2;
+        transition: 0.2s fill-opacity linear;
+
+        &:hover {
+            fill-opacity: 0.8;
+        }
+
+        &--big {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    span {
+        margin-left: 12px;
+
+        color: rgba(255, 255, 255, 0.8);
+
+        font-size: 16px;
+        line-height: 16/16 * 100%;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+        }
+    }
+}

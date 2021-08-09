@@ -1,0 +1,48 @@
+.post-item {
+    &--w33p {
+        width: calc(100%/3 - 16px);
+
+        @media (max-width: 576px) {
+            width: 209px;
+        }
+    }
+
+    &--w50p {
+        width: calc(50% - 16px);
+
+        @media (max-width: 768px) {
+            width: calc(100% - 16px);   
+        }
+    }
+
+    &__preview {
+        
+    }
+
+    &__content {
+        margin-top: 19px;
+        margin-bottom: 12px;
+    }
+
+    &__title {
+        margin-bottom: 13px;
+
+        color: $color_black;
+
+        font-size: 24px;
+        line-height: 26/24 * 100%;
+
+        a {
+            color: inherit;
+
+            font-size: inherit;
+        }
+    }
+
+    &__date {
+        color: rgba(147, 134, 134, 0.7);
+
+        font-size: 16px;
+        line-height: 16/16 * 100%;
+    }
+}

@@ -1,0 +1,116 @@
+.btn {
+    position: relative;
+    display: inline-block;
+    min-width: 280px;
+    padding: 16px 40px 16px 15px;
+
+    border-radius: 25px;
+    color: $color-white;
+    background: linear-gradient(180deg, $color-light-green 0%, #017637 100%);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    outline: none;
+    transition: transform 0.2s linear;
+
+    font-size: 18px;
+    line-height: 18/18 * 100%;
+    text-align: center;
+    text-transform: uppercase;
+
+    &:hover {
+        background: linear-gradient(180deg, #017637 0%, $color-light-green 100%);
+    }
+
+    &:active {
+        opacity: 0.95;
+        transform: scale(0.98);
+    }
+
+    &:disabled {
+        background: linear-gradient(180deg, $color-light-green 0%, #017637 100%);
+        transform: scale(1);
+        opacity: 0.4;
+        cursor: default;
+    }
+
+    &__circle {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translateY(-50%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+
+        background-color: $color-light-green;
+
+        @media (max-width: 1280px) {
+            width: 24px;
+            height: 24px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 22px;
+            height: 22px;
+        }
+
+        @media (max-width: 768px) {
+            width: 20px;
+            height: 20px;
+        }
+
+        svg {
+            fill: $color-white;
+        }
+    }
+
+    &__word {
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    &--default {
+        @media (max-width: 1280px) {
+            min-width: 228px;
+            padding-top: 13px;
+            padding-bottom: 14px;
+
+            font-size: 15px;
+        }
+
+        @media (max-width: 1024px) {
+            min-width: 220px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            min-width: 180px;
+            padding: 12px 35px 12px 16px;
+
+            font-size: 12px;
+        }
+    }
+
+    &--medium {
+        min-width: 240px;
+    }
+
+    &--small {
+        min-width: 120px;
+        padding: 14px 16px;
+
+        border-radius: 5px;
+
+        font-size: 14px;
+
+        svg {
+            display: none;
+        }
+    }
+}

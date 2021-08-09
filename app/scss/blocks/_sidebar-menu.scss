@@ -1,0 +1,105 @@
+.sidebar-menu {
+    &__item {
+        position: relative;
+        padding-right: 47px;
+        padding-left: 18px;
+    }
+
+    &__link {
+        display: block;
+
+        color: $color-gray;
+        transition: color $sidebar-menu-slide-time linear;
+
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 36px;
+
+        &:hover {
+            color: $color-light-green;
+        }
+
+        svg {
+            content: "";
+            position: absolute;
+            top: 18px;
+            left: 0;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 10px;
+
+            transition: transform $sidebar-menu-slide-time linear;
+        }
+
+        &--active {
+            color: $color-light-green;
+
+            svg {
+                transform: translateY(-50%) rotate(90deg);
+            }
+
+            .sidebar-menu__circle {
+                background-color: #2e75b3;
+
+                &::before {
+                    transform: translate(-50%, -50%) rotate(90deg);
+                }
+
+                &::after {
+                    transform: translate(-50%, -50%) rotate(-180deg);
+                }
+            }       
+        }
+    }
+
+    &__circle {
+        position: absolute;
+        top: 18px;
+        right: 0;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+
+        border-radius: 50%;
+        background-color: $color-light-green;
+        transition: background-color $sidebar-menu-slide-time linear;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            background-color: $color-white;
+            transition: transform $sidebar-menu-slide-time linear;
+        }
+
+        &::before {
+            width: 2px;
+            height: 10px;
+        }
+
+        &::after {
+            width: 10px;
+            height: 2px;
+        }
+    }
+
+    &__link:hover:not(&__link--active) &__circle {
+        background-color: $color-dark-green;
+    }
+
+    &__submenu {
+        max-height: 0;
+        border-bottom: 1px solid #f0e5e5;
+
+        overflow: hidden;
+        transition: max-height $sidebar-menu-slide-time linear;
+
+        ul {
+            padding-bottom: 35px;
+        }
+    }
+}

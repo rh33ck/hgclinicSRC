@@ -1,0 +1,29 @@
+.doctor-thumbs {
+    &__thumb {
+        width: 232px;
+        height: 288px;
+        border: 5px solid transparent;
+
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.5s border-color linear;
+
+        @media (max-width: 1280px) {
+            height: 231px;
+        }
+
+        @media (max-width: 1024px) {
+            height: 184px;
+        }
+
+        @media (max-width: 768px) {
+            height: 150px;
+
+            border-radius: 15px;
+        }
+
+        &--active {
+            border-color: $color-salad;
+        }
+    }
+}

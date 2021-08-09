@@ -1,0 +1,38 @@
+.content-header {
+    &__title {
+        margin-bottom: 12px;
+
+        color: $color-black;
+
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 48/48 * 100%;
+
+        @media (max-width: 768px) {
+            font-size: 28px;
+        }
+    }
+
+    &__description {
+        
+    }
+
+    &__paragraph {
+        &:not(:last-of-type) {
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 15/14 * 100%;
+        }
+
+        &--bold {
+            font-weight: 700;
+        }
+    }
+
+    &__image {
+        margin-top: 24px;
+    }
+}

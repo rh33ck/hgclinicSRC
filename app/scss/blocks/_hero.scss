@@ -1,0 +1,16 @@
+.hero {
+    // min-height: 656px;
+    padding-top: 160px; // header height
+    border-bottom: 16px solid rgba(0, 147, 68, 0.2);
+
+    background: url("../images/bg.png") center center no-repeat;
+    background-size: contain;
+
+    @media (max-width: 1024px) {
+        padding-top: 110px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 80px;
+    }
+}

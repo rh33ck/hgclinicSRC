@@ -1,0 +1,22 @@
+.offers {
+    padding-bottom: 80px;
+
+    @media (max-width: 1024px) {
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 48px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 12px;
+        padding-bottom: 31px;
+    }
+
+    &__container {
+        @media (max-width: 576px) {
+            padding-right: 0;
+        }
+    }
+}

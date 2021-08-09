@@ -1,0 +1,32 @@
+.form-group {
+    &--default {
+        width: 263px;
+
+        @media (max-width: 768px) {
+            width: 224px;
+        }
+    }
+
+    &--small {
+        width: 120px;
+    }
+
+    &--wide {
+        width: 100%;
+    }
+
+
+    &__label {
+        display: block;
+        margin-bottom: 6px;
+        color: rgba(0, 0, 0, 0.6);
+
+        font-size: 12px;
+        line-height: 12/12 * 100%;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+}

@@ -1,0 +1,42 @@
+.details-slider {
+    position: relative;
+
+    &__slide {
+        border-radius: 20px;
+        overflow: hidden;
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+
+        &--prev {
+            left: 0;
+            transform: translate(-50%, -50%) rotate(180deg);
+
+            @media (max-width: 670px) {
+                transform: translate(-35%, -50%) rotate(180deg);
+            }
+        }
+
+        &--next {
+            right: 0;
+            transform: translate(50%, -50%);
+
+            @media (max-width: 670px) {
+                transform: translate(35%, -50%);
+            }
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: -38px;
+        left: 50%;
+        z-index: 5;
+        transform: translateX(-50%);
+
+        line-height: 1;
+    }
+}

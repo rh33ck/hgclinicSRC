@@ -1,0 +1,28 @@
+.offer-cards {
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+
+        @media (max-width: 576px) {
+            display: none;
+        }
+
+        &--prev {
+            left: 0;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        &--next {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+
+    // Used in sidebar
+    &__card {
+        margin-bottom: 24px;
+    }
+}

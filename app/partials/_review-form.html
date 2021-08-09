@@ -1,0 +1,75 @@
+<section class="content-section content__section">
+    <div class="heading heading--left-aligned content-section__header">
+        <h2 class="heading__inner heading__inner--in-content">
+            Оставить отзыв
+        </h2>
+        <div class="heading__subhead heading__subhead--in-content">
+            Спасибо Вам за отзывы о клинико-диагностическом центре High Guard Clinic. Мы искренне
+            признательны всем тем, кто все эти годы с нами, кто выбрал именно нашу клинику и по достоинству
+            ценит наш высокий уровень сервиса и безупречное качество нашей работы.
+        </div>
+    </div>
+
+    <form class="review-form" method="POST" action="/">
+        <div class="review-form__row">
+            <div class="form-group form-group--default review-form__group">
+                <label class="form-group__label" for="reviewName">
+                    Как к Вам обратиться?
+                </label>
+                <input id="reviewName" class="field field--name-input form-group__field" type="text" placeholder="Введите имя" required>
+            </div>
+            <div class="form-group form-group--default review-form__group">
+                <label class="form-group__label" for="reviewEmail">
+                    E-mail
+                </label>
+                <input id="reviewEmail" class="field field--email-input form-group__field" type="email" placeholder="Введите E-mail" required>
+            </div>
+        </div>
+        <div class="review-form__row">
+            <div class="form-group form-group--default review-form__group">
+                <label class="form-group__label" for="reviewRecipient">
+                    Врач
+                </label>
+                <select id="reviewRecipient" class="field field--select form-group__field" required>
+                    <option value="" disabled selected>Выберите врача</option>
+                    <option>Третьяков Сергей Владимирович</option>
+                    <option>Федоренко Евгений Анатольевич</option>
+                    <option>Митрофанова Ольга Николаевна</option>
+                </select>
+            </div>
+            <div class="form-group form-group--default review-form__group">
+                <label class="form-group__label" for="reviewSubject">
+                    Услуга
+                </label>
+                <select id="reviewSubject" class="field field--select form-group__field" required>
+                    <option value="" disabled selected>Выберите услугу</option>
+                    <option>Консультация и диагностика</option>
+                    <option>Отбеливание</option>
+                    <option>Протезирование</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group form-group--wide">
+            <label class="form-group__label" for="reviewText">
+                Содержимое отзыва
+            </label>
+            <textarea id="reviewText" class="field field--textarea form-group__field" placeholder="Введите содержимое отзыва"></textarea>
+        </div>
+        <div class="checkbox review-form__checkbox">
+            <input id="reviewCheckbox" class="checkbox__input" type="checkbox">
+            <label class="checkbox__label" for="reviewCheckbox">
+                Нажимая кнопку «Отправить отзыв», я даю свое согласие на обработку моих персональных
+                данных, в соответствии с Федеральным законом от 27.07.2006 года №152-ФЗ «О персональных
+                данных», на условиях и для целей, определенных в Согласии на обработку персональных данных.
+            </label>
+        </div>
+        <button class="btn btn--default review-form__btn" type="submit">
+            Отправить отзыв
+            <span class="btn__circle">
+                <svg width="11" height="6" viewBox="0 0 11 6" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.98312 0L7.49315 0.487259L9.67352 2.65547H0V3.34457H9.67352L7.49315 5.51276L7.98312 6.00001L11 3L7.98312 0Z"/>
+                </svg>
+            </span>
+        </button>
+    </form>
+</section>

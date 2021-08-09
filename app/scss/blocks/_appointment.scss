@@ -1,0 +1,44 @@
+.appointment {
+    padding-top: 44px;
+    padding-bottom: 35px;
+
+    background-image: url("../images/appointment/bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // background-attachment: fixed;
+
+    @media (max-width: 1280px) {
+        padding: 33px 0;
+    }
+
+    @media (max-width: 1024px) {
+        padding: 24px 0;
+    }
+
+    @media (max-width: 768px) {
+        padding-bottom: 16px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 27px;
+
+        background-image: none !important;
+    }
+
+    &__heading {
+        margin-bottom: 35px;
+
+        @media (max-width: 1280px) {
+            margin-bottom: 28px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__form {
+
+    }
+}

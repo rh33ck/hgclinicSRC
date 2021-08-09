@@ -1,0 +1,36 @@
+.pagination {
+    &__list {
+        display: flex;
+    }
+
+    &__item:first-of-type &__link {
+        padding-left: 25px;
+        border-left: 1px solid #c4c4c4;
+
+        border-radius: 25px 0 0 25px;
+    }
+
+    &__item:last-of-type &__link {
+        padding-right: 25px;
+        border-radius: 0 25px 25px 0;
+    }
+
+    &__link {
+        display: inline-block;
+        height: 48px;
+        padding: 0 18px;
+        border: 1px solid #c4c4c4;
+        border-left: none;
+
+        color: $color-light-green;
+        background-color: $color-white;
+
+        line-height: 48px;
+
+        &--active {
+            border-color: $color-light-green;
+            color: $color-white;
+            background-color: $color-light-green;
+        }
+    }
+}

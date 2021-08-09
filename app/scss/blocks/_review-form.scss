@@ -1,0 +1,17 @@
+.review-form {
+    &__row {
+        display: flex;
+        margin-bottom: 12px;
+    }
+
+    &__group {
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+    }
+
+    &__checkbox {
+        max-width: 635px;
+        margin: 24px 0;
+    }
+}

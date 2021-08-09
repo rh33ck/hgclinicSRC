@@ -1,0 +1,123 @@
+.offer-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 356px;
+    min-height: 420px;
+    padding: 30px 30px 28px;
+    border: 1px solid $color-salad;
+    overflow: hidden;
+
+    border-radius: 20px;
+
+    @media (max-width: 1280px) {
+        max-width: 284px;
+        min-height: 338px;
+        padding: 24px 24px 20px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 224px;
+        min-height: 269px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 184px;
+        min-height: 220px;
+        padding: 19px 19px 16px;
+
+        border-radius: 15px;
+    }
+
+    @media (max-width: 479px) {
+        max-width: 115px;
+        min-height: 140px;
+        padding: 11px;
+
+        border-radius: 10px;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        width: 100%;
+        height: 56%;
+
+        background: linear-gradient(180deg, rgba(0, 103, 56, 0) 0%, #006738 76.56%);
+
+        @media (max-width: 1280px) {
+            background: linear-gradient(180deg, rgba(0, 103, 56, 0) 0%, #006738 100%);
+        }
+    }
+
+    &:hover {
+
+    }
+
+    &--in-sidebar {
+        @media (max-width: 1280px) {
+            max-width: 334px;
+            min-height: 400px;
+            padding: 26px 32px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        transition: 1s transform linear;
+    }
+
+    &__caption {
+        position: relative;
+        z-index: 3;
+        margin-top: auto;
+        margin-bottom: 18px;
+
+        color: $color-white;
+
+        font-size: 24px;
+        line-height: 24/24 * 100%;
+
+        @media (max-width: 1280px) {
+            margin-bottom: 16px;
+        }
+
+        @media (max-width: 1024px) {
+            margin-bottom: 10px;
+
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 7px;
+
+            font-size: 16px;
+        }
+
+        @media (max-width: 479px) {
+            margin-bottom: 0;
+
+            font-size: 12px;
+        }
+    }
+
+    &__link {
+        display: block;
+        z-index: 3;
+
+        @media (max-width: 479px) {
+            display: none;
+        }
+    }
+}

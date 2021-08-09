@@ -1,0 +1,70 @@
+.slider-pagination {
+    text-align: center;
+    line-height: 14px;
+
+    @media (max-width: 1280px) {
+        line-height: 11px;
+    }
+
+    &__bullet {
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        vertical-align: middle;
+
+        background-color: #cce9da;
+        cursor: pointer;
+
+        @media (max-width: 1280px) {
+            width: 11px;
+            height: 11px;
+        }
+
+        @media (max-width: 768px) {
+            width: 8px;
+            height: 8px;
+        }
+
+        &:not(:last-of-type) {
+            margin-right: 2px;
+        }
+
+        &--active {
+            position: relative;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #019344;
+
+            background-color: transparent;
+
+            @media (max-width: 1280px) {
+                width: 14px;
+                height: 14px;
+            }
+
+            @media (max-width: 768px) {
+                width: 10px;
+                height: 10px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+
+                background-color: $color-dark-green;
+
+                @media (max-width: 768px) {
+                    width: 4px;
+                    height: 4px;
+                }
+            }
+        }
+    }
+}

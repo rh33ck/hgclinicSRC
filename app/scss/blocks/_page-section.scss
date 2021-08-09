@@ -1,0 +1,23 @@
+.page-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1024px) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    @media (max-width: 768px) {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    @media (max-width: 576px) {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+
+    &__heading {
+        margin: 0 auto 24px;
+    }
+}

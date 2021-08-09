@@ -1,0 +1,57 @@
+.breadcrumbs {
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        margin-right: 9px;
+        
+        line-height: 1;
+
+        &:not(:last-of-type):after {
+            content: "";
+            position: relative;
+            top: 2px;
+            display: inline-block;
+            width: 6px;
+            height: 10px;
+
+            background: url("../images/breadcrumbs/arrow.svg") center center no-repeat;
+            background-size: cover;
+        }
+    }
+
+    &__link {
+        margin-right: 6px;
+
+        color: $color-light-green;
+
+        font-family: "Proxima Nova";
+        font-size: 13px;
+        line-height: 16/13 * 100%;
+        font-weight: 600;
+
+        &--home {
+            position: relative;
+            padding-left: 18px;
+
+            &::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                width: 13px;
+                height: 10px;
+
+                background: url("../images/home.svg") center center no-repeat;
+            }
+        }
+
+        &--current {
+            color: $color-gray;
+        }
+    }
+}

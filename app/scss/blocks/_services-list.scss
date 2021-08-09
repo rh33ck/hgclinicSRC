@@ -1,0 +1,14 @@
+.services-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 30px;
+
+    &--p0 {
+        padding: 0;
+    }
+
+    &__item {
+        margin-bottom: 40px;
+    }
+}

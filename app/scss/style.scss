@@ -1,0 +1,162 @@
+@import "fonts";
+
+@import "vendor/swiper/swiper";
+
+@import "vars";
+@import "reset";
+
+.body {
+    color: $color-gray;
+
+    font-family: "Myriad Pro";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24/18 * 100%;
+
+    &--locked {
+        overflow: hidden;
+    }
+}
+
+.container {
+    max-width: 1224px + 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1280px) {
+        max-width: 984px + 30px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 784px + 30px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 644px + 30px;
+    }
+}
+
+.container-wide {
+    max-width: 1472px + 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+
+    @media (max-width: 1280px) {
+        max-width: 1181px + 30px;
+    }
+
+    @media (max-width: 1024px) {
+        max-width: 944px + 30px;
+    }
+
+    @media (max-width: 768px) {
+        max-width: 704px + 30px;
+    }
+}
+
+.container-page {
+    max-width: 1286px + 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px 0 47px;
+
+    @media (max-width: 1280px) {
+        padding-left: 15px;
+    }
+}
+
+
+@import "blocks/page";
+@import "blocks/link";
+@import "blocks/list";
+@import "blocks/form-group";
+@import "blocks/field";
+@import "blocks/checkbox";
+@import "blocks/btn";
+@import "blocks/btn-close";
+@import "blocks/tabs";
+@import "blocks/tabs-header";
+@import "blocks/tabs-content";
+@import "blocks/slider-arrow";
+@import "blocks/slider-pagination";
+@import "blocks/menu";
+@import "blocks/socials";
+@import "blocks/contact-item";
+@import "blocks/logo";
+@import "blocks/accordion1";
+@import "blocks/accordion1-item";
+@import "blocks/accordion2";
+@import "blocks/accordion2-item";
+@import "blocks/page-section";
+@import "blocks/heading";
+
+
+@import "blocks/breadcrumbs";
+@import "blocks/content";
+@import "blocks/content-header";
+@import "blocks/content-gallery";
+@import "blocks/content-section";
+@import "blocks/services-list";
+@import "blocks/service-item";
+@import "blocks/post-items";
+@import "blocks/post-categories";
+@import "blocks/post-preview";
+@import "blocks/post-item";
+@import "blocks/pagination";
+
+@import "blocks/sidebar";
+@import "blocks/sidebar-section";
+@import "blocks/sidebar-menu";
+
+@import "blocks/page-header";
+@import "blocks/burger";
+@import "blocks/burger-menu";
+@import "blocks/contact-block";
+
+@import "blocks/hero";
+@import "blocks/hero-slider";
+@import "blocks/hero-slide";
+@import "blocks/hero-offer";
+
+@import "blocks/intro";
+
+@import "blocks/directions";
+@import "blocks/direction-card";
+
+@import "blocks/offers";
+@import "blocks/offer-cards";
+@import "blocks/offer-card";
+
+@import "blocks/appointment";
+@import "blocks/appointment-form";
+
+@import "blocks/doctors";
+@import "blocks/doctors-intro";
+@import "blocks/doctor-cards";
+@import "blocks/doctor-card";
+@import "blocks/doctor-thumbs";
+
+@import "blocks/details";
+@import "blocks/details-slider";
+
+@import "blocks/reviews";
+@import "blocks/review-cards";
+@import "blocks/review-card";
+@import "blocks/review-form";
+@import "blocks/reviews-filter";
+
+@import "blocks/useful";
+
+@import "blocks/map";
+
+@import "blocks/contact";
+
+@import "blocks/page-footer";
+@import "blocks/description";
+@import "blocks/footer-contacts";
+@import "blocks/payments";
+
+@import "blocks/modal";
+@import "blocks/modal-appointment";

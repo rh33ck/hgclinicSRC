@@ -1,0 +1,44 @@
+.btn-close {
+    background-color: transparent;
+
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16/16 * 100%;
+
+    svg {
+        width: 15px;
+        height: 15px;
+        margin-left: 8px;
+        vertical-align: bottom;
+
+        fill: #ff0000;
+    }
+
+    &--in-burger {
+
+    }
+
+    &--in-modal {
+        @media (max-width: 768px) {
+            font-size: 12px;
+        }
+
+        svg {
+            @media (max-width: 768px) {
+                width: 10px;
+                height: 10px;
+                margin-left: 5px;
+                vertical-align: unset;
+            }
+        }
+    }
+
+    &--green {
+        color: $color-light-green;
+    }
+
+    &--white {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}

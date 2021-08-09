@@ -1,0 +1,46 @@
+.content-section {
+    @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 15/15 * 100%;
+    }
+
+    &__header {
+        margin-bottom: 24px;
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__list {
+        margin: 40px 0;
+    }
+
+    &__paragraph {
+        margin-bottom: 23px;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        &--no-margin {
+            margin-bottom: 0;
+        }
+
+        &--bold {
+            font-weight: bold;
+        }
+    }
+
+    &__accordion {
+        margin: 40px 0;
+    }
+
+    &__actions {
+        text-align: center;
+    }
+}

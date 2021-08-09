@@ -1,0 +1,51 @@
+.hero-slider {
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        width: 35px;
+        height: 67px;
+        top: 50%;
+        z-index: 2;
+
+        background: url("../images/hero-slider/arrow.svg") center center no-repeat;
+        background-size: cover;
+
+        @media (max-width: 1280px) {
+            width: 29px;
+            height: 55px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 24px;
+            height: 49px;
+        }
+
+        @media (max-width: 768px) {
+            width: 14px;
+            height: 29px;
+        }
+
+        &--prev {
+            left: 0;
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        &--next {
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+
+    &__pagination {
+        position: absolute;
+        bottom: 23px;
+        left: 50%;
+        z-index: 10;
+        transform: translateX(-50%);
+
+        @media (max-width: 1280px) {
+            bottom: 16px;
+        }
+    }
+}

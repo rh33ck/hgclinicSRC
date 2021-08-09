@@ -1,0 +1,19 @@
+.list {
+    &__item {
+        position: relative;
+        padding-left: 17px;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: (24px/2); // line-height / 2
+            left: 0; // padding-left / 2
+            transform: translateY(-50%);
+            width: 8px;
+            height: 8px;
+
+            border-radius: 50%;
+            background-color: $color-light-green;
+        }
+    }
+}

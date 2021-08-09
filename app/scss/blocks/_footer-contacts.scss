@@ -1,0 +1,34 @@
+.footer-contacts {
+    &__title {
+        margin-bottom: 25px;
+
+        color: $color-gray;
+
+        font-size: 22px;
+        line-height: 18/22 * 100%;
+
+        @media (max-width: 1024px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        &:not(:last-of-type) {
+            margin-bottom: 14px;
+
+            @media (max-width: 1024px) {
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    &__contact {
+        display: block;
+        line-height: 18/16 * 100%;
+
+        @media (max-width: 1024px) {
+            font-size: 14px;
+            line-height: 14/14 * 100%;
+        }
+    }
+}

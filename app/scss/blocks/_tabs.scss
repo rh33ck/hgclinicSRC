@@ -1,0 +1,13 @@
+.tabs {
+    &__header {
+        margin-bottom: 80px;
+
+        @media (max-width: 768px) {
+            margin-bottom: 60px;
+        }
+
+        @media (max-width: 576px) {
+            margin-bottom: 40px;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+.post-items {
+    &__categories {
+
+    }
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 11px -8px 0;
+    }
+
+    &__item {
+        margin: 0 8px 30px;
+    }
+}

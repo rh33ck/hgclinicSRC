@@ -1,0 +1,221 @@
+.post-preview {
+    position: relative;
+    display: flex;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    &--w-body {
+        height: 275px;
+        padding: 21px;
+    }
+
+    &--wo-body {
+        min-height: 440px;
+        padding: 75px 26px 30px;
+
+        @media (max-width: 1280px) {
+            min-height: 351px;
+            padding: 60px 21px 20px;
+        }
+
+        @media (max-width: 1024px) {
+            min-height: 280px;
+            padding: 50px 17px 16px;
+        }
+
+        @media (max-width: 768px) {
+            min-height: 230px;
+            padding: 40px 14px 14px;
+
+            border-radius: 15px;
+        }
+
+        @media (max-width: 670px) {
+            border-radius: 10px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 56%;
+
+            background: linear-gradient(180deg, rgba(22, 22, 30, 0) 0%, #16161e 100%);
+        }
+    }
+
+    &__category {
+        position: absolute;
+        top: 29px;
+        left: 0;
+        z-index: 1;
+        min-width: 120px;
+        min-height: 30px;
+        padding: 8px 25px 6px;
+
+        border-radius: 0px 10px 10px 0px;
+        color: $color-white;
+
+        font-size: 16px;
+        line-height: 16/16 * 100%;
+        text-align: center;
+        text-transform: uppercase;
+
+        &--articles {
+            background-color: #ff0000;
+        }
+
+        &--events {
+            background-color: #00579f;
+        }
+
+        &--news {
+            background-color: #7bb058;
+        }
+
+        @media (max-width: 1280px) {
+            top: 23px;
+            min-width: 96px;
+            min-height: 24px;
+            padding: 6px 18px 5px;
+
+            font-size: 13px;
+        }
+
+        @media (max-width: 1024px) {
+            top: 19px;
+            min-width: 76px;
+            min-height: 19px;
+            padding: 5px 15px 4px;
+
+            font-size: 10px;
+        }
+
+        @media (max-width: 768px) {
+            top: 15px;
+            min-width: 63px;
+            min-height: 16px;
+            padding: 4px 14px;
+
+            font-size: 8px;
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__inner {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        margin-top: auto;
+    }
+
+    &__caption {
+        margin-bottom: 11px;
+
+        color: rgba(255, 255, 255, 0.9);
+        transition: color 0.3s ease-out;
+
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 26/24 * 100%;
+
+        &:hover {
+            color: rgba(255, 255, 255, 1);
+        }
+
+        @media (max-width: 1280px) {
+            margin-bottom: 9px;
+
+            font-size: 22px;
+            line-height: 22/22 * 100%;
+        }
+
+        @media (max-width: 1024px) {
+            margin-bottom: 7px;
+
+            font-size: 18px;
+        }
+
+        @media (max-width: 768px) {
+            margin-bottom: 5px;
+
+            font-size: 16px;
+            line-height: 14/16 * 100%;
+        }
+
+        a {
+            color: inherit;
+
+            font-size: inherit;
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__date {
+        color: rgba(255, 255, 255, 0.7);
+
+        font-size: 16px;
+        line-height: 16/16 * 100%;
+
+        @media (max-width: 1280px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 1024px) {
+            font-size: 12px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+        }
+    }
+
+    &__icon {
+        margin-left: auto;
+    }
+
+    &__chevron {
+        display: block;
+        width: 28px;
+        height: 28px;
+
+        fill: $color-white;
+        fill-opacity: 0.7;
+        transition: fill-opacity 0.3s ease-out;
+
+        &:hover {
+            fill-opacity: 1;
+        }
+
+        @media (max-width: 1280px) {
+            width: 21px;
+            height: 21px;
+        }
+
+        @media (max-width: 1024px) {
+            width: 17px;
+            height: 17px;
+        }
+
+        @media (max-width: 768px) {
+            width: 14px;
+            height: 14px;
+        }
+    }
+}

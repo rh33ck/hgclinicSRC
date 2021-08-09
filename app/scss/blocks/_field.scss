@@ -1,0 +1,83 @@
+.field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(0, 147, 68, 0.5);
+
+    border-radius: 5px;
+    outline: none;
+    color: $color-gray;
+    background-color: $color-white;
+
+    font-size: 16px;
+
+    background-repeat: no-repeat;
+
+    // @media (max-width: 1024px) {
+    //     padding: 8px;
+    // }
+
+    &::placeholder {
+        color: #c4c4c4;
+        opacity: 1;
+
+        @media (max-width: 768px) {
+            font-size: 13px;
+        }
+    }
+
+    &--name {
+        padding-left: 38px;
+
+        background-image: url("../images/field/users.svg");
+        background-position: 12px 12px;
+        background-size: 18px 16px;
+    }
+
+    &--phone {
+        padding-left: 38px;
+
+        background-image: url("../images/phone.svg");
+        background-position: 12px 12px;
+        background-size: 16px 16px;
+    }
+
+    &--email {
+        padding-left: 42px;
+
+        background-image: url("../images/mail.svg");
+        background-position: 12px 12px;
+        background-size: 22px 16px;
+    }
+
+    &--select {
+        padding-right: 38px;
+
+        background-image: url("../images/field/arrow.svg");
+        background-position: right 13px center;
+        background-size: 14px 8px;
+        appearance: none;
+
+        &:invalid {
+            color: #c4c4c4;
+        }
+
+        option[value=""][disabled] {
+            display: none;
+        }
+
+        option {
+            color: $color-gray;
+        }
+    }
+
+    &--textarea {
+        height: 300px;
+
+        resize: none;
+
+        &::placeholder {
+            text-align: center;
+            line-height: 300px;
+        }
+    }
+}

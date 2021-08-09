@@ -1,0 +1,19 @@
+.doctor-cards {
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+
+        &--prev {
+            left: 0;
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        &--next {
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+    }
+}
